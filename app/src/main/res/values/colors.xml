@@ -300,5 +300,12 @@
 
     <color name="black">#000000</color><!--黑色 -->
 
+    <color name="lightorange">#FF8570</color>
+
+    <color name="bluegray">#418CB7</color>
+
+    <color name="lightred">#D7003A</color>
+
+    <color name="coffeecolor">#9F3311</color> <!--咖色-->
 
 </resources>

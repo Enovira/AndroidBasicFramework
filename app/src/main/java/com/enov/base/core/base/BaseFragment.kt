@@ -25,10 +25,11 @@ abstract class BaseFragment<VM : ViewModel, DB : ViewDataBinding> : Fragment() {
         return binding.root
     }
 
-    abstract fun initView()
-
     @LayoutRes
     abstract fun getLayoutId(): Int
+
+    abstract fun initView()
+
 
     private fun createViewModel(): VM {
         return ViewModelProvider(this)[getJvmClazz(this)]
