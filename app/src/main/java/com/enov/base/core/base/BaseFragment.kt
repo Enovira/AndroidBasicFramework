@@ -14,11 +14,12 @@ import java.lang.reflect.ParameterizedType
 
 abstract class BaseFragment<VM : ViewModel, DB : ViewDataBinding> : Fragment() {
 
-    lateinit var binding: DB
+    private var _binding: DB? = null
+    val binding: DB get() = _binding!!
     lateinit var viewModel: VM
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false)
+        _binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel = createViewModel()
         initView()
@@ -38,6 +39,11 @@ abstract class BaseFragment<VM : ViewModel, DB : ViewDataBinding> : Fragment() {
     @Suppress("UNCHECKED_CAST")
     private fun <VM> getJvmClazz(obj: Any): VM {
         return (obj.javaClass.genericSuperclass as ParameterizedType).actualTypeArguments[0] as VM
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

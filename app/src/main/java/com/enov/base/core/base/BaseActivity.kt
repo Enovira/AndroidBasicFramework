@@ -11,12 +11,13 @@ import java.lang.reflect.ParameterizedType
 
 abstract class BaseActivity<VM: ViewModel, DB: ViewDataBinding>: AppCompatActivity() {
 
-    lateinit var binding: DB
+    private var _binding: DB? = null
+    val binding: DB get() = _binding!!
     lateinit var viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, getLayoutId())
+        _binding = DataBindingUtil.setContentView(this, getLayoutId())
         binding.lifecycleOwner = this
         viewModel = createViewModel()
         initView()
@@ -34,6 +35,11 @@ abstract class BaseActivity<VM: ViewModel, DB: ViewDataBinding>: AppCompatActivi
     @Suppress("UNCHECKED_CAST")
     private fun <VM> getJvmClazz(obj: Any): VM {
         return (obj.javaClass.genericSuperclass as ParameterizedType).actualTypeArguments[0] as VM
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 
