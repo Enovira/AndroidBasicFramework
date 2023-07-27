@@ -1,4 +1,4 @@
-package com.enov.base.mvvm.vm
+package com.enov.base.mvvm.fragment.vm
 
 import androidx.lifecycle.ViewModel
 

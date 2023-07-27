@@ -1,9 +1,9 @@
-package com.enov.base.mvvm.view.frag
+package com.enov.base.mvvm.fragment
 
 import com.enov.base.R
 import com.enov.base.core.base.BaseFragment
 import com.enov.base.databinding.FragmentMessageBinding
-import com.enov.base.mvvm.vm.MessageFragVM
+import com.enov.base.mvvm.fragment.vm.MessageFragVM
 
 class MessageFrag: BaseFragment<MessageFragVM, FragmentMessageBinding>() {
 

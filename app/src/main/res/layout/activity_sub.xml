@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.enov.base.mvvm.vm.SubActVM" />
+            type="com.enov.base.mvvm.activity.vm.SubActVM" />
     </data>
 
         <androidx.fragment.app.FragmentContainerView

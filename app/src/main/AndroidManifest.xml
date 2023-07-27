@@ -38,10 +38,11 @@
         android:theme="@style/Theme.Base"
         tools:targetApi="31">
         <activity
-            android:name="com.enov.base.mvvm.view.act.MainActivity"
+            android:name="com.enov.base.mvvm.activity.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:theme="@style/AppSplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +50,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvvm.view.act.SubActivity"
+        <activity android:name=".mvvm.activity.SubActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"/>
     </application>

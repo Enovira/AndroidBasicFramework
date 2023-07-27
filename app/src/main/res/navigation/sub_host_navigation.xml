@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/bluetoothOperationFrag"
-        android:name="com.enov.base.mvvm.view.frag.BluetoothOperationFrag"
+        android:name="com.enov.base.mvvm.fragment.BluetoothOperationFrag"
         android:label="BluetoothOperationFrag" />
 </navigation>

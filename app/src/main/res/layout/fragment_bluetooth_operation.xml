@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.enov.base.mvvm.vm.BluetoothOperationFragVM" />
+            type="com.enov.base.mvvm.fragment.vm.BluetoothOperationFragVM" />
     </data>
 
     <com.google.android.flexbox.FlexboxLayout

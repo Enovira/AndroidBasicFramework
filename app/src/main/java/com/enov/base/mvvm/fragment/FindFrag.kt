@@ -1,9 +1,9 @@
-package com.enov.base.mvvm.view.frag
+package com.enov.base.mvvm.fragment
 
 import com.enov.base.R
 import com.enov.base.core.base.BaseFragment
 import com.enov.base.databinding.FragmentFindBinding
-import com.enov.base.mvvm.vm.FindFragVM
+import com.enov.base.mvvm.fragment.vm.FindFragVM
 
 class FindFrag: BaseFragment<FindFragVM, FragmentFindBinding>() {
 

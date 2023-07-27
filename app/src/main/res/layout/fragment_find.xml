@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.enov.base.mvvm.vm.FindFragVM" />
+            type="com.enov.base.mvvm.fragment.vm.FindFragVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

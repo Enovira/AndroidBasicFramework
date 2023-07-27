@@ -13,4 +13,16 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Splash启动页Style -->
+    <style name="AppSplashScreen" parent="Theme.SplashScreen">
+        <!--启动画面背景颜色-->
+        <item name="windowSplashScreenBackground">#ffff</item>
+        <!-- 启动画面icon图标：这里可以是图片、帧动画等-->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
+        <!-- icon动画在关闭之前显示的时长：最长时间为1000毫秒-->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Splash退出后的主题-->
+        <item name="postSplashScreenTheme">@style/Theme.Base</item>
+    </style>
 </resources>

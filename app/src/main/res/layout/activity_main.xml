@@ -7,13 +7,13 @@
 
         <variable
             name="vm"
-            type="com.enov.base.mvvm.vm.MainActVM" />
+            type="com.enov.base.mvvm.activity.vm.MainActVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".mvvm.view.act.MainActivity">
+        tools:context=".mvvm.activity.MainActivity">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"

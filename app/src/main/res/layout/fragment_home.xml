@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.enov.base.mvvm.vm.HomeFragVM" />
+            type="com.enov.base.mvvm.fragment.vm.HomeFragVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
